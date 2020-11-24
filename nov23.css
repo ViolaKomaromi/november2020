@@ -1,0 +1,51 @@
+/* pseudo classes change the state of an element*/
+
+/* :root{
+    color: teal;
+} */
+
+h1:hover{
+    color: tomato;
+    /* padding-left: 50px;
+    font-size: 80px; */
+}
+a:active{
+             text-decoration: none;
+             color: rgb(0, 255, 21);
+             
+}
+.list-example-1 p:last-child{
+    color: turquoise;
+}
+.list-example-2 p:nth-child(2n+1){
+            color: rgb(236, 71, 98);
+}
+/* pseudo elements */
+
+.element1::first-line{
+    background-color: powderblue;
+    color: purple;
+}
+/* it only changes the first line, even if you have more lines */
+
+.element2::first-letter{
+    background-color: black;
+    color: white;
+}
+.element3::selection{
+    background: yellow;
+    color: black;
+}
+.element4::before{
+    /* content: "before"; */
+    content: attr(href);
+    /* content: url("www.google.com"); */
+    color: rgb(103, 197, 9);
+}
+.element4::after{
+    /* content: "after"; */
+    /* content: url(https://image.shutterstock.com/image-photo/summer-green-rural-nature-landscape-600w-1711600924.jpg); */
+    /* clip-path: ; */
+    color: darkcyan;
+
+}
